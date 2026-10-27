@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="10/27/2026 16:11:38" ReportInfo.Modified="10/27/2026 16:14:16" ReportInfo.CreatorVersion="2027.1.0.0">
+  <Dictionary>
+    <TableDataSource Name="DuLieu" ReferenceName="DuLieu" DataType="System.Int32" Enabled="true">
+      <Column Name="NgayNhap" DataType="System.DateTime"/>
+      <Column Name="TenHang" DataType="System.String"/>
+      <Column Name="LoaiHang" DataType="System.String"/>
+      <Column Name="GiaBan" DataType="System.Decimal"/>
+      <Column Name="DonVi" DataType="System.String"/>
+      <Column Name="SoLuongTon" DataType="System.Int32"/>
+    </TableDataSource>
+  </Dictionary>
+  <ReportPage Name="Page1" Watermark.Font="Arial, 60pt">
+    <ReportTitleBand Name="ReportTitle1" Width="718.2" Height="37.8"/>
+    <PageHeaderBand Name="PageHeader1" Top="40.47" Width="718.2" Height="28.35">
+      <TextObject Name="Text2" Left="37.8" Width="94.5" Height="26.46" Border.Lines="All" Text="NgayNhap" Font="Arial, 10pt"/>
+      <TextObject Name="Text4" Left="132.3" Width="94.5" Height="26.46" Border.Lines="All" Text="TenHang" Font="Arial, 10pt"/>
+      <TextObject Name="Text6" Left="226.8" Width="94.5" Height="26.46" Border.Lines="All" Text="LoaiHang" Font="Arial, 10pt"/>
+      <TextObject Name="Text8" Left="321.3" Width="94.5" Height="26.46" Border.Lines="All" Text="GiaBan" Font="Arial, 10pt"/>
+      <TextObject Name="Text10" Left="415.8" Width="94.5" Height="26.46" Border.Lines="All" Text="DonVi" Font="Arial, 10pt"/>
+      <TextObject Name="Text12" Left="510.3" Width="94.5" Height="26.46" Border.Lines="All" Text="SoLuongTon" Font="Arial, 10pt"/>
+    </PageHeaderBand>
+    <DataBand Name="Data1" Top="71.48" Width="718.2" Height="26.46" DataSource="DuLieu">
+      <TextObject Name="Text1" Left="37.8" Width="94.5" Height="26.46" Border.Lines="All" Text="[DuLieu.NgayNhap]" Format="Date" Format.Format="d" Font="Arial, 10pt"/>
+      <TextObject Name="Text3" Left="132.3" Width="94.5" Height="26.46" Border.Lines="All" Text="[DuLieu.TenHang]" Font="Arial, 10pt"/>
+      <TextObject Name="Text5" Left="226.8" Width="94.5" Height="26.46" Border.Lines="All" Text="[DuLieu.LoaiHang]" Font="Arial, 10pt"/>
+      <TextObject Name="Text7" Left="321.3" Width="94.5" Height="26.46" Border.Lines="All" Text="[DuLieu.GiaBan]" Format="Currency" Format.UseLocale="true" Format.DecimalDigits="2" HorzAlign="Right" WordWrap="false" Font="Arial, 10pt" Trimming="EllipsisCharacter"/>
+      <TextObject Name="Text9" Left="415.8" Width="94.5" Height="26.46" Border.Lines="All" Text="[DuLieu.DonVi]" Font="Arial, 10pt"/>
+      <TextObject Name="Text11" Left="510.3" Width="94.5" Height="26.46" Border.Lines="All" Text="[DuLieu.SoLuongTon]" Font="Arial, 10pt"/>
+    </DataBand>
+    <PageFooterBand Name="PageFooter1" Top="100.61" Width="718.2" Height="18.9"/>
+  </ReportPage>
+</Report>
